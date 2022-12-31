@@ -1,0 +1,339 @@
+/*                                                           AMIR CSS CODE                                                   */
+/* Button Css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+
+
+*{
+    padding: 0;
+    /* margin necessary for full screen */
+    margin: 0;
+}
+
+.logo{
+    width: 200px;
+    
+}
+
+.close{
+    text-align: center;
+    padding-top: 10px;
+    color: darkgray;
+}
+
+
+
+/* END EQUIPMENT Header */
+
+
+.equipment-header {
+    
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)),url(images/Stock/bleach3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    
+}
+
+.equipment1-header {
+    
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4,9,30,0.7)),url(images/Stock/bleach2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;  /*remove bullets*/
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+    
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+ .nav-links ul li::after{   /*for underline before hover */
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* END EQUIPMENT Header */
+
+.title1{
+    width: 90%;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);  /*ensure center */
+    text-align: center;
+    
+
+}
+
+.title1 h1{
+
+    font-size: 62px;
+
+}
+
+.h4{
+    color: gray;
+}
+
+.sect1{
+    margin: auto;
+  width: 80%;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+li.sect1{
+    padding: 1100px;
+}
+
+
+.sect2{
+    padding-top: 2px;
+}
+
+.vid {
+    padding-left: 90px;
+    padding-right: 30px;
+
+    
+    float: left;
+    
+}
+
+
+hr.line {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #0e0a12 inset;
+}
+
+/* carousel Css */
+.container{
+    /* text-align: center; */
+    margin: auto;
+    line-height: 2.2;
+   
+}
+
+
+
+
+.carousel{
+    margin: auto;
+    width: 60%;
+   
+    padding: 20px;
+    overflow: hidden;
+    max-width: 600px;
+    /* put buttons on the content */
+    position: relative; 
+}
+
+.carousel .carousel_item,
+.carousel .carousel_item-hidden{
+    display: none;
+
+    /* add ons */
+    text-align: center;
+}
+
+.carousel .carousel_item img {
+    float: none;
+    width:  400px;
+    height: 225px;
+    object-fit: cover;
+    margin: auto;
+
+    /* add ons */
+}
+
+.carousel .carousel_item--visible{
+    display: block;
+    animation: fadeVisibility 0.9s;
+    /* text-align: center; */
+
+    /* adds on */
+    /* padding: 0px 0px 500px 0px; */
+}
+
+.carousel .carousel_actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* add ons */
+    text-align: center;
+}
+
+.carousel .carousel_actions button{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    /* add ons */
+    /* text-align: center; */
+}
+
+.carousel .carousel_actions button#carousel_button--prev{
+    margin-left: 20px;
+    margin-bottom:200px;
+
+}
+
+.carousel .carousel_actions button#carousel_button--next{
+    margin-right: 20px;
+    margin-bottom: 200px;
+
+}
+
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+/* carousel Css */
+
+/*Button Two*/
+/* other than buttons */
+.button-css.main{
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.main{
+    width: 30%;
+    margin:22px;
+    float: left;
+}
+
+.button-css.main{
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 0 0 100px;
+}
+/* end of other than buttons */
+
+/* buttons two */
+.button-css.main {
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+}
+
+
+.button-css.main span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-css.main span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-css.main:hover span {
+  padding-right: 25px;
+}
+
+.button-css.main:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* end button two */
+
+/* Source: https://frontendresource.com/css-button-templates/ */
+  /* Button Css */
+/*                                                           AMIR CSS CODE                                                   */
+
+/* Footer Start */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer.h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    
+}
+
+.icons .fa{
+    color:red ;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/* Footer end */
+
+

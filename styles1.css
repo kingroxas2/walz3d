@@ -1,0 +1,183 @@
+/*                                                           Iz'aan CSS CODE                                                   */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 200px;
+    
+}
+
+/* Header */
+.header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/calisthenics.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+/* Navigation Bar */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;  /*remove bullets*/
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+ .nav-links ul li::after{   /*for underline before hover */
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Header Text Box */
+.title{
+    width: 90%;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title h1{
+    font-size: 62px;
+}
+
+  /* Stretching Part */
+.stretch{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 50px;
+}
+.stretch h1{
+    color: #8B008B;
+    font-size: 40px;
+    font-weight: 600;
+}
+p{
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* Programs */
+.program{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Program Columns */
+.program-col{
+    flex-basis: 40%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.program-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.program h1{
+  color: #800000;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+.program p{
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  padding: 10px;
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000080;
+    margin: 10px 0;
+}
+h4.title1{
+  text-align: center;
+  font-size: 15px;
+  color: #191970;
+  font-weight: 525;
+  margin: 10px 0;
+}
+.program-col:hover{
+    box-shadow: 0 0 20px 0px rgba(139, 0, 0, 0.5);
+}
+
+/* Footer Start */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer.h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+
+}
+
+.icons .fa{
+    color:red ;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+/* Footer End */

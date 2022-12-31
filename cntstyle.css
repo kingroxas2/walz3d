@@ -1,0 +1,293 @@
+
+/* BEGIN Faishal Aqil 2014883   */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 200px;
+    
+}
+
+/* BEGIN Training Area Header */
+
+.header-trainingarea{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/Stock/walid.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+/* END Training Area Header */
+
+.trainmap{
+    width: fit-content;
+}
+
+
+
+
+
+/* BEGIN Training Area Header */
+
+.header-contact{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Stock/walid.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+/* BEGIN Training Area Header */
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* nav img{
+    width: 150px;
+
+} */
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;  /*remove bullets*/
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+    
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+ .nav-links ul li::after{   /*for underline before hover */
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* END Training Area Header */
+
+
+
+/* BEGIN Contact Us Intro */
+
+.title {
+    width: 90%;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);  /*ensure center */
+    text-align: center;
+    
+}
+
+.title h1{
+
+    font-size: 62px;
+
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.info_button{
+    display:inline-block;
+    color: white;
+    padding: 12px 34px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid white;
+    position: relative;
+    
+}
+
+.info_button:hover{
+    border: 1px solid red;
+    background: transparent;
+    transition: 1s;
+    color: red;
+
+}
+
+/* END Contact Us Intro */
+
+
+/*----BEGIN EG1---*/
+.area{
+    width: 80%;  /*amount of width used */
+    margin: auto;
+    text-align: center;
+    padding-top:30px;
+}
+
+.area-row{
+    margin-top: 5%;
+    display: flex;  /* make it looks like in a row */
+    justify-content: space-between;
+}
+.area-col{
+    flex-basis:  31%;
+    
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:  20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.area-col h5{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+   font-size: 35px;
+}
+.area-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0.2);
+}
+
+.area-col img {
+    float: left;
+    width:  400px;
+    height: 225px;
+    object-fit: cover;
+}
+
+
+/*----END EG1---*/
+
+/*----BEGIN Contact Us page---*/
+
+.location{
+    width: 88%;
+    margin: auto;
+    padding: 60px 0 ;
+
+}
+
+
+
+.location iframe{
+
+    width: 100%;
+
+}
+
+.contacts{
+    width: 80%;
+    margin: auto;
+}
+
+.contacts-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+     
+}
+.contacts-col div{
+    display: flex;
+    align-items:center ;
+    margin-bottom: 40px;
+}
+
+.contacts-col .fa{
+    font-size: 28px;
+    color: red;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contacts-col h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+
+.contacts-col p{
+    padding: 0;
+}
+
+.send_button{
+    display:inline-block;
+    color: black;
+    padding: 12px 34px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid black;
+    position: relative;
+    
+}
+
+.send_button:hover{
+    border: 1px solid red;
+    background: transparent;
+    transition: 1s;
+    color: red;
+
+}
+
+.contacts-col input, .contacts-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+/*----END Contact page---*/
+
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+    color: white;
+}
+
+.footer.h3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    
+}
+
+.icons .fa{
+    color:red ;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+/* END Faishal Aqil 2014883 */
